@@ -1,15 +1,10 @@
 package com.nelioalves.cursomc;
 
-import java.util.Arrays;
-import java.util.Optional;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.nelioalves.cursomc.domain.Categoria;
-import com.nelioalves.cursomc.domain.Produto;
 import com.nelioalves.cursomc.repositories.CategoriaRepository;
 import com.nelioalves.cursomc.repositories.ProdutoRepository;
 
@@ -26,8 +21,10 @@ public class CursomcApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Optional<Categoria> cat1 = categoriaRepository.findById(1);
-		Optional<Categoria> cat2 = categoriaRepository.findById(2);
+		/*
+		 * Optional<Categoria> cat1 = categoriaRepository.findById(1);
+		 * Optional<Categoria> cat2 = categoriaRepository.findById(2);
+		 */
 		
 		//categoriaRepository.saveAll(Arrays.asList(cat1, cat2));
 
