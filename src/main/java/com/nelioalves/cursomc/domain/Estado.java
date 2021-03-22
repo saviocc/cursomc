@@ -29,11 +29,10 @@ public class Estado implements Serializable {
 		
 	}
 
-	public Estado(Integer id, String nome, List<Cidade> cidades) {
+	public Estado(Integer id, String nome) {
 		super();
 		this.id = id;
 		this.nome = nome;
-		this.cidades = cidades;
 	}
 
 	public Integer getId() {
